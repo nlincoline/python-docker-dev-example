@@ -27,12 +27,7 @@ def on_startup():
 
 @app.get("/")
 def hello():
-    return "Hello, Docker!"
-
-
-@app.post("/heroes/")
-def create_hero(hero: Hero):
-    with Session(engine) as session:
+    return "Hello, Docker!!!!!!
         session.add(hero)
         session.commit()
         session.refresh(hero)
